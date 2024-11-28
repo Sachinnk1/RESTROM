@@ -1,0 +1,842 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="">
+
+  <title> Restrom </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+    crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="{% static 'images/hero-bg.jpg' %}" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="/">
+            <span>
+              Restrom
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="/index/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/menu_view1/">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/book/">Book Table</a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a href="/custom_home/" class="user_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <a class="cart_link" href="/cart/">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                  style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                    </g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                </svg>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="/menu_view1/" aria-hidden="true"></i>
+                </button>
+              </form>
+              <a href="/lgout/" class="order_online">
+                LOGOUT
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Fast Food Restaurant
+                    </h1>
+                    <p>
+                      Welcome to Restrom, where every meal is crafted with love and inspired by global flavors.
+                      Savor dishes made from the freshest ingredients, served in a warm and inviting atmosphere.
+                      Whether it’s a casual lunch or a celebration, we make every moment special.
+                      Join us and create memories worth sharing!
+                    </p>
+                    <div class="btn-box">
+                      <a href="/menu_view1/" class="btn1">
+                        Order Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Fast Food Restaurant
+                    </h1>
+                    <p>
+                      At Restrom, dining is more than just a meal – it’s an experience.
+                      Our menu is a blend of flavors designed to delight every palate.
+                      Relax in our cozy ambiance, perfect for every occasion.
+                      Let us serve you moments to savor and cherish!
+                    </p>
+                    <div class="btn-box">
+                      <a href="/menu_view1/" class="btn1">
+                        Order Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Fast Food Restaurant
+                    </h1>
+                    <p>
+                      Restrom is your destination for exceptional flavors and unforgettable moments.
+                      Our chefs craft dishes with fresh ingredients and a touch of creativity.
+                      Enjoy warm hospitality in a setting that feels like home.
+                      Come dine with us and discover the joy of great food!
+                    </p>
+                    <div class="btn-box">
+                      <a href="/menu_view1/" class="btn1">
+                        Order Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- offer section -->
+
+  <section class="offer_section layout_padding-bottom">
+    <div class="offer_container">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'images/o1.jpg' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Tasty Thursdays
+                </h5>
+                <h6>
+                  <span>20%</span> Off
+                </h6>
+                <a href="/menu_view1/">
+                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                    style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                     c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                     C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                     c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                     C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                     c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                      </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'images/o2.jpg' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Days
+                </h5>
+                <h6>
+                  <span>15%</span> Off
+                </h6>
+                <a href="/menu_view1/">
+                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                    style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                     c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                     C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                     c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                     C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                     c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                      </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end offer section -->
+
+  <!-- food section -->
+
+  <section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Menu
+        </h2>
+      </div>
+
+      <!-- <ul class="filters_menu">
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".burger">Burger</li>
+        <li data-filter=".pizza">Pizza</li>
+        <li data-filter=".pasta">Pasta</li>
+        <li data-filter=".fries">Fries</li>
+      </ul> -->
+
+      <div class="filters-content">
+        <div class="row grid">
+
+
+          {% for item in data %}
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div class="img-box">
+                <img src="{{ item.Image.url }}" class="card-img-top" alt="{{ item.Name }}"
+                  style="width:150px; height:auto;">
+              </div>
+
+              <div class="detail-box">
+                <h5>
+                  {{ item.Name }}
+                </h5>
+                <p>{{ item.Description }}</p>
+
+                <div class="options">
+                  <h6>
+                    Price: {{ item.Price }} /-
+                  </h6>
+
+                  <a href="/product_view/{{item.id}}">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                      style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                           c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                           C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                           c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                           C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                           c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          {% endfor %}
+
+
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="/menu_view1/">
+          View More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end food section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                We Are Restrom
+              </h2>
+            </div>
+            <p>
+              We believe that dining is more than just a meal; it’s an experience that brings people together. Our
+              passion lies in crafting flavorful dishes with fresh, high-quality ingredients, inspired by culinary
+              traditions from around the world.
+
+              <br> <br>
+
+              Whether you’re here to enjoy a casual lunch, a romantic dinner, or celebrate a special occasion, Restrom
+              offers the perfect ambiance with warm hospitality. Our chefs are dedicated to creating dishes that
+              tantalize your taste buds, while our team ensures every visit feels like a treat.
+
+              <!-- <br> <br>
+
+              But Restrom isn’t just about food – it’s about connection. Whether you’re catching up with friends,
+              enjoying a cozy family dinner, or celebrating life’s special moments, our inviting atmosphere and
+              attentive service make every visit memorable. -->
+
+              <br> <br>
+
+              Our mission is simple: to provide a space where great food and great company come together in perfect
+              harmony. At Restrom, every guest is part of our story, and we can’t wait to be part of yours.
+
+              <br> <br>
+
+              <strong>Step into Restrom, where taste meets tradition, and every meal is an experience to savor.</strong>
+            </p>
+            <a href="/about/">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Book A Table
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="/book_table/" method="POST">
+              {% csrf_token %}
+              <div>
+                <input type="text" class="form-control" placeholder="Your Name" name="name" id="name" required />
+              </div>
+              <div>
+                <input type="tel" class="form-control" placeholder="Phone Number" name="phone" id="phone"
+                  pattern="^\d{10}$" title="Phone number must be 10 digits" required />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Your Email" name="email" id="email" required />
+              </div>
+              <div>
+                <!-- <select class="form-control nice-select wide" name="person">
+                  <option value="" disabled selected>
+                    How many persons?
+                  </option>
+                  <option value="">
+                    2
+                  </option>
+                  <option value="">
+                    3
+                  </option>
+                  <option value="">
+                    4
+                  </option>
+                  <option value="">
+                    5
+                  </option>
+                </select> -->
+                <input type="number" class="form-control" placeholder="No. of seats" name="person" id="person" min="1"
+                  required />
+
+              </div>
+              <div>
+                <input type="date" class="form-control" name="date" id="date" min="{{ today_date }}" required>
+              </div>
+              <div class="btn_box">
+                <button type="submit">
+                  Book Table
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container ">
+            <div id="googleMap">
+              <!-- <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.746505820831!2d75.78039921532866!3d11.25875359199988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65a98bf8cc48d%3A0x6c680db7819ad8e8!2sCalicut%2C%20Kerala!5e0!3m2!1sen!2sin!4v1699963669273!5m2!1sen!2sin" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end book section -->
+
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          What Says Our Customers
+        </h2>
+      </div>
+      <div class="carousel-wrap row ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  ⭐️⭐️⭐️⭐️⭐️
+                  <br> <br>
+                  "An absolute gem!
+                  <br>
+                  I visited Restrom with my family, and we were blown away by the quality of food and the cozy
+                  atmosphere. The menu has something for everyone, and everything we tried was fresh and full of flavor.
+                  The staff was incredibly attentive and made us feel so welcome. Restrom is now our go-to spot for
+                  family dinners – can’t wait to come back!"
+                </p>
+                <h6>
+                  Moana Michell
+                </h6>
+                <p>
+                  Germany
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="{% static 'images/client1.jpg' %}" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  ⭐️⭐️⭐️⭐️⭐️
+                  <br> <br>
+                  "A perfect dining experience!
+                  <br>
+                  I went to Restrom for a date night, and it was amazing from start to finish. The ambiance is intimate
+                  yet inviting, and the food was absolutely divine. The service was top-notch – the staff went out of
+                  their way to make the evening special. Highly recommend the signature dishes; they’re worth every
+                  penny. Restrom exceeded all our expectations!"
+                </p>
+                <h6>
+                  Mike Hamell
+                </h6>
+                <p>
+                  Canada
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="{% static 'images/client2.jpg' %}" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  ⭐️⭐️⭐️⭐️⭐️
+                  <br> <br>
+                  "Fantastic food and amazing service!
+                  <br>
+                  I stopped by Restrom with friends for dinner, and it was such a great experience. The dishes were
+                  beautifully presented, and you could taste the freshness in every bite. The atmosphere was warm and
+                  welcoming, perfect for catching up with friends. The staff made sure we had everything we needed
+                  without being intrusive. Definitely planning to come back soon!"
+                </p>
+                <h6>
+                  Mike Hamell
+                </h6>
+                <p>
+                  India
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="{% static 'images/client3.jpeg' %}" alt="" class="box-img">
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Contact Us
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Calicut, Kerala
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              Restrom
+            </a>
+            <p>
+              We craft dishes with fresh ingredients and global inspiration, creating a menu that satisfies every
+              craving. More than just a restaurant, we’re a place to connect, celebrate, and savor life’s special
+              moments.
+            </p>
+            <div class="footer_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Opening Hours
+          </h4>
+          <p>
+            Everyday
+          </p>
+          <p>
+            10.00 Am - 03.00 Am
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">S NK</a><br><br>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://themewagon.com/" target="_blank">S NK</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="{% static 'js/custom.js' %}"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

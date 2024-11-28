@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Status</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">My Approved Bookings</h2>
+
+        {% if approved_bookings %}
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <!-- <th>Booking ID</th> -->
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>No. of Seat</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for booking in approved_bookings %}
+                    <tr>
+                        <!-- <td>{{ booking.id }}</td> -->
+                        <td>{{ booking.Name }}</td>
+                        <td>{{ booking.Phone }}</td>
+                        <td>{{ booking.Email }}</td>
+                        <td>{{ booking.Persons }}</td>
+                        <td>{{ booking.Date }}</td>
+                        <td>
+                            <a href="{% url 'delete_seat' booking.id %}" 
+                               class="btn btn-danger btn-sm" 
+                               onclick="return confirmCancellation();">
+                                Cancel
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="text-center text-muted">No approved bookings yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        function confirmCancellation() {
+            return confirm('Are you sure you want to cancel this booking?');
+        }
+    </script>
+</body>
+</html>
