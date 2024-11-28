@@ -23,7 +23,6 @@ urlpatterns = [
     path('chef_view/',views.chef_view,name='chef_view'),
     path('chef_reg/',views.chef_reg,name='chef_reg'),
 
-    # path('custom_approve/<int:id>',views.custom_approve,name='custom_approve'),
     path('delete_customer/<int:id>',views.delete_customer,name='delete_customer'),
     path('custom_edit/',views.custom_edit,name='custom_edit'),
     path('custom_edit1/<int:uid>',views.custom_edit1,name='custom_edit1'),
@@ -35,11 +34,8 @@ urlpatterns = [
     path('book_table/',views.book_table,name='book_table'),
     path('booking_list_view/',views.booking_list_view,name='booking_list_view'),
     path('approve_booking/<int:booking_id>/', views.approve_booking, name='approve_booking'),
-    # path('regmenu/',views.menu_reg,name='menu_reg'),
     path('menu_reg1/',views.menu_reg1,name='menu_reg1'),
-    # path('menu_view/',views.menu_view,name='menu_view'),
     path('menu_view1/',views.menu_view1,name='menu_view1'),
-    # path('menu_view2/',views.menu_view2,name='menu_view2'),
 
     path('admin_menu_view/',views.admin_menu_view,name='admin_menu_view'),
     path('delete_menu/<int:id>',views.delete_menu,name='delete_menu'),
@@ -47,18 +43,14 @@ urlpatterns = [
     path('menu_edit1/<int:uid>/',views.menu_edit1,name='menu_edit1'),
 
 
-    # path('add_to_cart/<int:product_id>/', views.add_to_cart, name='add_to_cart'),
 
-    # path('cart/', views.cart_view, name='cart_view'),
 
 
     path('product_view/<int:id>', views.product_view, name='product_view'),
-    # path('add_to_cart/<int:product_id>/',views. add_to_cart, name='add_to_cart'),
 
 
     path('delete_seat/<int:id>', views.delete_seat, name='delete_seat'),
 
-    # path('cart/', views.cart_view, name='cart_view'),
 
     path('cart/', views.cart_detail, name='cart_detail'),
     path('add-to-cart/<int:item_id>/', views.add_to_cart, name='add_to_cart'),

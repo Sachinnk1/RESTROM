@@ -334,75 +334,17 @@ def product_view(request,id):
     x=Menu1.objects.get(id=id)
     return render(request, 'product_view.html', {'data': x})
 
-# def product_view(request, id):
-#     product = get_object_or_404(Menu1, id=id)
-#     quantity = int(request.GET.get('quantity', 1))  # Default to 1 if not specified
-
-#     # Logic to add product to cart with the given quantity
-#     cart = request.session.get('cart', {})
-#     if id in cart:
-#         cart[id]['quantity'] += quantity
-#     else:
-#         cart[id] = {'quantity': quantity, 'price': product.Price}
-
-#     request.session['cart'] = cart
-
-#     return render(request, 'product_view.html', {'data': x})
-
-# def add_to_cart(request, product_id):
-#     product = get_object_or_404(Menu1, id=product_id)
-#     quantity = int(request.GET.get('quantity', 1))
-
-#     # Initialize the cart if it doesn't exist
-#     cart = request.session.get('cart', {})
-
-#     if str(product_id) in cart:
-#         cart[str(product_id)]['quantity'] += quantity
-#     else:
-#         cart[str(product_id)] = {
-#             'name': product.name,
-#             'price': float(product.price),
-#             'quantity': quantity,
-#             'image_url': product.image.url if product.image else None,
-#         }
-
-#     request.session['cart'] = cart
-#     return redirect('cart_view')
 
 
 
 
-# def cart_view(request):
-#     # Get the cart from session or set it to an empty dictionary if it doesn't exist
-#     cart = request.session.get('cart', {})
-    
-#     # Calculate total price
-#     total_price = sum(item['price'] * item['quantity'] for item in cart.values())
-
-#     return render(request, 'cart.html', {'cart': cart, 'total_price': total_price})
 
 
 
-# from .models import Customers, CartItem
 
-# def view_cart(request, customer_id):
-#     # Get the customer instance
-#     customer = get_object_or_404(Customers, id=customer_id)
-    
-#     # Get all cart items for this customer
-#     cart_items = CartItem.objects.filter(cust_id=customer)
-    
-#     # Calculate total price for the cart
-#     total_cart_price = sum(item.get_total_price() for item in cart_items)
-    
-#     # Pass data to the template
-#     context = {
-#         'customer': customer,
-#         'cart_items': cart_items,
-#         'total_cart_price': total_cart_price,
-#     }
-    
-#     return render(request, 'cart.html', context)
+
+
+
 
 
 

@@ -38,9 +38,7 @@ class Menu1(models.Model):
     def __str__(self):
         return self.Name
 
-class Table(models.Model):
-    table_no=models.IntegerField(verbose_name='Chair No.')
-    Status=models.CharField(max_length=100,verbose_name='Status')
+
 
 
 class Booking(models.Model):
@@ -55,32 +53,11 @@ class Booking(models.Model):
 
 
 
-class Complaints(models.Model):
-    Custom_id=models.ForeignKey(Customers,on_delete=models.CASCADE)
-    Complaint=models.CharField(max_length=500,verbose_name='Complaint')
-    Reply=models.CharField(max_length=500,verbose_name='Reply')
-    Date=models.DateField(verbose_name='Date')
 
 
 
-# Assuming you already have a Product or Menu model like the Menu1
 
 
-
-# class Cart(models.Model):
-#     product_id=models.Model(Menu1,on_delete=models.CASCADE)
-#     Name = models.CharField(max_length=200)
-#     Price = models.IntegerField()
-#     Description = models.CharField(max_length=200)
-
-#     def __str__(self):
-#         return self.name
-
-
-
-# class Cart(models.Model):
-#     user = models.OneToOneField(User, on_delete=models.CASCADE)
-#     created_at = models.DateTimeField(auto_now_add=True)
 
 
 
